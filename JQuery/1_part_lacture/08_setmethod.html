@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>set method</title>
+<style>
+  h1{
+        background-color: aquamarine;
+        text-align: center;
+        color: rgb(18, 31, 31);
+        border: 2px solid ;
+        border-radius: 5px;
+    }
+    h2{
+        background-color: rgb(158, 185, 94);
+        text-align: center;
+        color: rgb(18, 31, 31);
+        border: 2px solid ;
+        border-radius: 5px;
+    }
+    .container {
+        width: 80%;
+        margin: 20px auto;
+        display: flex;
+        justify-content: space-around;
+    }
+    .box {
+        width: 700%;
+        height: 500px;
+        padding: 10px;
+        border: 2px solid #c34f4f;
+        margin: 20px ;
+        overflow: auto;background-color: #c34f4f;
+    }
+    .red{
+        color: red;
+    }
+   
+    body{
+        background-color: #ccc;
+    }
+</style>
+</head>
+<body>
+    <h1>Learn by : Anmol Chauhan</h1>
+    <div class="container">
+        <div class="box">
+            <h2>test box</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eget justo ac dui scelerisque fermentum. Suspendisse vel metus luctus, consectetur ligula nec, vestibulum neque. Aenean accumsan nibh nec ex sodales aliquam. Sed ut metus in felis vestibulum pulvinar sit amet sed velit. Mauris sit amet orci vel dui fermentum tincidunt. Donec non justo at ex sodales vehicula. Nullam non eros in lectus vestibulum dignissim. Integer lacinia risus quis risus pretium, vel venenatis erat ultricies. Fusce malesuada orci a velit vestibulum, nec dapibus lorem vestibulum. Fusce vel metus ex. Curabitur vehicula enim a eros bibendum, nec scelerisque risus vehicula.</p>
+        </div>
+    </div>
+    <button id="clickbutton">Set Value</button>
+</body>
+<script src="/jquery.js"></script>
+<script>
+$(document).ready(function(){
+    $('#clickbutton').click(function(){
+   //text()
+        $('.box h2').text("kyo beta chok gya na ")
+        $('.box p').text(" humare Yha assa he hota hai!!!!")
+      // html()
+        $('.box p').html("kuhh kaam hai ki nhi <b> har time snap use krna </b>hai ")
+    // atrrr()
+        $('.box h2').attr("class", "red");
+    });
+});
+</script>
+</html>

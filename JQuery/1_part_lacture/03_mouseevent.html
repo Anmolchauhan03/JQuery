@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jquery</title>
+</head>
+<style>
+h1{
+    background-color: aquamarine;
+    text-align: center;
+    color: rgb(18, 31, 31);
+    border: 2px solid ;
+    border-radius: 5px;
+}
+#test1{
+    background-color: chocolate;
+    border: 2px solid ;
+    border-radius: 5px;
+}
+p{
+    color: rgb(66, 2, 112);
+}
+h2{
+    text-align: center;
+    color: #475e30;
+}
+</style>
+<body>
+    <h1>Learn by Anmol Chauhan</h1>
+    <div id="test1">
+        <h2>Test Box 1</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam nobis consectetur, voluptate autem repellat ut maxime nihil quae dicta amet voluptates explicabo esse excepturi labore dolore distinctio quos quisquam dolores.</p>
+    </div>
+</body>
+<script src="/jquery.js"></script>
+<script>
+    $(document).ready(function(){
+        $('#test1').click(function(){
+            $('#test1').css('background-color','yellow')
+           
+        })
+        $('h1').click(function(){
+            $('h1').css('color','red')
+           
+        })
+        $('h2').click(function(){
+            $('h2').css('color','red');
+            });
+        $('h2').dblclick(function(){
+            $('h2').css('color','black');
+            });
+        $('h1').contextmenu(function(){
+            $('h1').css('color','brown');
+            });
+        $('h1').mouseenter(function(){
+            $('h1').css('color','tan');
+            });
+        $('h1').mouseleave(function(){
+            $('h1').css('color','purple');
+            });
+        //const a = $('#test1').html();
+       // console.log(a);
+    })
+</script>
+</html>

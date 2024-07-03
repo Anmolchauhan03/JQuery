@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>scroll top and left</title>
+</head>
+<style>
+    h1{
+        background-color: rgb(133, 39, 39);
+        text-align: center;
+        color: rgb(234, 230, 211);
+        border: 2px solid ;
+        border-radius: 5px;
+    }
+    p{
+        height: 200px;
+        width: 400px;
+        overflow: auto;
+    }
+    #box {
+        width: 500%;
+        height: 50px;
+        padding: 10px;
+        border: 2px solid #a6bf1c;
+        margin: 20px ; 
+    }
+    body{
+        background-color: #edf1ee;
+    }
+ 
+</style>
+<body>
+    <h1>Learn by : Anmol Chauhan</h1>
+    <div class="container">
+        <div id="box">
+            <h2>test box</h2>
+            <button id="topBtn">scroll-top</button>
+            <button id="leftBtn">Scroll-left</button>
+            <br><br>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eget justo ac dui scelerisque fermentum. Suspendisse vel metus luctus, consectetur ligula nec, vestibulum neque. Aenean accumsan nibh nec ex sodales aliquam. Sed ut metus in felis vestibulum pulvinar sit amet sed velit. Mauris sit amet orci vel dui fermentum tincidunt. Donec non justo at ex sodales vehicula. Nullam non eros in lectus vestibulum dignissim. Integer lacinia risus quis risus pretium, vel venenatis erat ultricies. Fusce malesuada orci a velit vestibulum, nec dapibus lorem vestibulum. Fusce vel metus ex. Curabitur vehicula enim a eros bibendum, nec scelerisque risus vehicula.
+             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eget justo ac dui scelerisque fermentum. Suspendisse vel metus luctus, consectetur ligula nec, vestibulum neque. Aenean accumsan nibh nec ex sodales aliquam. Sed ut metus in felis vestibulum pulvinar sit amet sed velit. Mauris sit amet orci vel dui fermentum tincidunt. Donec non justo at ex sodales vehicula. Nullam non eros in lectus vestibulum dignissim. Integer lacinia risus quis risus pretium, vel venenatis erat ultricies. Fusce malesuada orci a velit vestibulum, nec dapibus lorem vestibulum. Fusce vel metus ex. Curabitur vehicula enim a eros bibendum, nec scelerisque risus vehicula.</p>
+           
+        </div>
+    </div>
+    
+</body>
+<script src="/jquery.js"></script>
+<script>
+ $(document).ready(function(){
+  console.log($(window).scrollTop());
+ });
+</script>
+</html> 

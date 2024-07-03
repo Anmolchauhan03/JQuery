@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Yellow Div and Green Box Example</title>
+<style>
+
+  .yellow-div {
+    width: 300px;
+    height: 200px;
+    align-self: auto;
+    background-color:pink;
+    margin-bottom: 20px; /* Add some space between the two divs */
+  }
+  h1{
+    
+    text-align: center;
+    color: rgb(18, 31, 31);
+}
+</style>
+</head>
+<body>
+ <h1>Learn by : Anmol Chauhan </h1>
+<div class="yellow-div">
+    <h2>Test box</h2>
+    <p>Yes!! i m the Superhero....!!!!</p>
+    <button> Test Button</button>
+</div>
+<h3></h3>
+</body>
+<script src="/jquery.js"></script>
+<script>
+    $(document).ready(function(){
+   $('.yellow-div').click(function(){
+      alert("The div element was clicked")
+      });
+   $('h2').click(function(){
+      alert("The h2 element was clicked")
+      });
+   $('p').click(function(event){
+    event.stopPropagation();
+      alert("The p element was clicked" + event.isPropagationStopped);
+      });
+   $('button').click(function(e){
+    stopPropagation();
+      alert("The button element was clicked")
+      });
+});
+</script>
+</html>

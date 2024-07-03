@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+body{
+    background-color: beige;
+    }
+    h1{
+        text-align:center;
+        background-color: cadetblue;
+        color: rgb(24, 16, 31);
+    }
+  #test1{
+    padding: 10px;
+    border: 1px solid #000;
+    background-color: aquamarine;
+  }
+  .fruits{
+    background-color: rgb(19, 144, 90);
+    color: aliceblue;
+    border: 1px solid blue;
+  } 
+
+</style>
+<body>
+    <h1>Selector</h1>
+    <div id="test1">
+        <h2>Test Box 1</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam nobis consectetur, voluptate autem repellat ut maxime nihil quae dicta amet voluptates explicabo esse excepturi labore dolore distinctio quos quisquam dolores.</p>
+    </div>
+    <ul class="fruits">
+        <li> orange</li>
+        <li>mango</li>
+        <li>graphes</li>
+        <li>litchi</li>
+    </ul>
+</body>
+<script src="/jquery.js"></script>
+<script>
+    $(document).ready(function(){
+    $("li:first").css("color","red");   
+    })
+</script>
+</html>

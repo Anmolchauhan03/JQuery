@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Yellow Div and Green Box Example</title>
+<style>
+
+  .yellow-div {
+    width: 300px;
+    height: 200px;
+    align-self: auto;
+    background-color:pink;
+    margin-bottom: 20px; /* Add some space between the two divs */
+  }
+  h1{
+    
+    text-align: center;
+    color: rgb(18, 31, 31);
+}
+</style>
+</head>
+<body>
+ <h1>Learn by : Anmol Chauhan </h1>
+<div class="yellow-div">
+    <h2>Test box</h2>
+    <a href="https://chatgpt.com/" id="result">ChatGPT</a><br><br>
+    <a href="https://www.youtube.com/">Youtube</a>
+</div>
+<br>
+<h2></h2>
+</body>
+<script src="/jquery.js"></script>
+<script>
+    $(document).ready(function(){
+   $('#result').click(function(event){
+    event.preventDefault();
+   });
+});
+</script>
+</html>

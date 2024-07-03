@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>keyboard</title>
+</head>
+<style>
+    h1{
+        background-color: aquamarine;
+        text-align: center;
+        color: rgb(18, 31, 31);
+        border: 2px solid ;
+        border-radius: 5px;
+    }
+    #test1{
+        background-color: chocolate;
+        border: 2px solid ;
+        border-radius: 5px;
+    }
+    p{
+        color: rgb(66, 2, 112);
+    }
+    h2{
+        text-align: center;
+        color: #475e30;
+    }
+</style>
+<body>
+    <h1>Learn by : Anmol Chauhan</h1>
+    <div id="test1">
+        <h2>Test Box 1</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam nobis consectetur, voluptate autem repellat ut maxime nihil quae dicta amet voluptates explicabo esse excepturi labore dolore distinctio quos quisquam dolores.</p>
+    </div>
+</body>
+<script src="/jquery.js"></script>
+<script>
+$(document).ready(function(){
+    $('body').keypress(function(){
+     $(this).css('background-color','yellow')
+    });
+    $('body').keyup(function(){
+     $(this).css('background-color','green')
+    });
+    $('body').keydown(function(){
+     $(this).css('background-color','purple')
+    });
+})
+</script>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>empty and before </title>
+</head>
+<style>
+    h1{
+        background-color: rgb(133, 39, 39);
+        text-align: center;
+        color: rgb(234, 230, 211);
+        border: 2px solid ;
+        border-radius: 5px;
+    }
+    h2{
+        background-color: rgb(243, 241, 237);
+        text-align: center;
+        color: rgb(0, 0, 0);
+      
+        border-radius: 1px;
+    }
+    .container {
+        width: 80%;
+        margin: 20px auto;
+        display: flex;
+        justify-content: space-around;
+    }
+    #box {
+        width: 700%;
+        height: 300px;
+        padding: 10px;
+        border: 2px solid #cbcad1;
+        margin: 20px ; 
+    }
+    body{
+        background-color: #539456;
+    }
+
+</style>
+<body>
+    <h1>Learn by : Anmol Chauhan</h1>
+    <div class="container">
+        <div id="box">
+            <h2>test box</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eget justo ac dui scelerisque fermentum. Suspendisse vel metus luctus, consectetur ligula nec, vestibulum neque. Aenean accumsan nibh nec ex sodales aliquam. Sed ut metus in felis vestibulum pulvinar sit amet sed velit. Mauris sit amet orci vel dui fermentum tincidunt. Donec non justo at ex sodales vehicula. Nullam non eros in lectus vestibulum dignissim. Integer lacinia risus quis risus pretium, vel venenatis erat ultricies. Fusce malesuada orci a velit vestibulum, nec dapibus lorem vestibulum. Fusce vel metus ex. Curabitur vehicula enim a eros bibendum, nec scelerisque risus vehicula.</p>
+        </div>
+    </div>
+    <br>
+    <button id="emptyBtn">Empty</button>
+    <button id="removeBtn"> Remove</button>
+  
+</body>
+<script src="/jquery.js"></script>
+<script>
+    $(document).ready(function(){
+     $('#emptyBtn').click(function(){
+        $('#box').empty();
+     });
+     $('#removeBtn').click(function(){
+        $('#box').remove();
+     });
+    });
+</script>
+</html> 

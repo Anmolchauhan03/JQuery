@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Two Divs with Paragraphs</title>
+<style>
+    /* Just some basic styling for demonstration */
+    h1{
+        background-color: aquamarine;
+        text-align: center;
+        color: rgb(18, 31, 31);
+        border: 2px solid ;
+        border-radius: 5px;
+    }
+    .container {
+        width: 80%;
+        margin: 20px auto;
+        display: flex;
+        justify-content: space-around;
+    }
+    .box {
+        width: 70%;
+        height: 200px;
+        padding: 10px;
+        border: 2px solid #c34f4f;
+        margin: 20px ;
+        overflow: auto;
+        background-color: #c34f4f;
+    }
+    .box1{
+        width: 700%;
+        padding: 10px;
+        border: 2px solid #a84fc3;
+        margin: 2px ;
+    }
+    body{
+        background-color: #ccc;
+    }
+</style>
+</head>
+<body>
+    <h1>Learn by : Anmol Chauhan</h1>
+    <div class="container">
+        <div class="box">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eget justo ac dui scelerisque fermentum. Suspendisse vel metus luctus, consectetur ligula nec, vestibulum neque. Aenean accumsan nibh nec ex sodales aliquam. Sed ut metus in felis vestibulum pulvinar sit amet sed velit. Mauris sit amet orci vel dui fermentum tincidunt. Donec non justo at ex sodales vehicula. Nullam non eros in lectus vestibulum dignissim. Integer lacinia risus quis risus pretium, vel venenatis erat ultricies. Fusce malesuada orci a velit vestibulum, nec dapibus lorem vestibulum. Fusce vel metus ex. Curabitur vehicula enim a eros bibendum, nec scelerisque risus vehicula.</p>
+        </div>
+        <div class="box1">
+            <p>Proin interdum, neque vel efficitur euismod, nisl elit tempor dolor, quis tempus mauris tortor eu risus. Mauris scelerisque libero non ipsum hendrerit, nec eleifend eros fringilla. Sed malesuada tristique ante, sed tempor nunc tempus eu. Nullam vestibulum erat a turpis luctus lacinia. Aliquam erat volutpat. In hac habitasse platea dictumst. Cras congue libero ut ultrices placerat. Duis auctor nunc vitae nisi consequat scelerisque. Fusce vestibulum purus magna, id rhoncus est consectetur sed. Curabitur vel ligula justo. Donec accumsan nisi nec mauris finibus, at luctus justo lobortis. Ut at nisi sollicitudin, elementum metus id, vestibulum mi. Donec venenatis arcu sit amet sapien feugiat rutrum.</p>
+        </div>
+    </div>
+</body>
+<script src="/jquery.js"></script>
+<script>
+$(document).ready(function(){
+    $('.box').scroll(function(){
+      console.log("you are scrolling")  
+    });
+    $(window).resize(function(){
+        console.log("you are resizing")  
+      });
+});
+
+</script>
+</html>

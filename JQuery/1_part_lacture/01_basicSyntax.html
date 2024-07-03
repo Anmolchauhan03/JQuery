@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Syntax</title>
+    <style>
+        body {
+            background-color: grey;
+        }
+        h1 {
+            text-align: center;
+            margin-top: 10px;
+            color: burlywood;
+        }
+        #test1 {
+            text-align: left;
+            width: 500px;
+            height: 150px;
+            background-color: aqua;
+            border-radius: 5px;
+            margin: 0 ; /* Center horizontally */
+        }
+        #test2 {
+            align-items:stretch; /* Stretch items vertically */
+            width: 500px;
+            height: 150px;
+            background-color: aqua;
+            border-radius: 5px;
+            display: flex; /* Use flexbox */
+            flex-direction:column; /* Arrange items in a column */
+            justify-content: flex-end; /* Center items vertically */
+            margin: 20px auto; /* Center horizontally */
+        }
+        #test2 h2 {
+            text-align: left; /* Center the heading */
+        }
+        #test2 p {
+            text-align:left; /* Center the paragraph */
+        }
+    </style>
+</head>
+<body>
+    <h1>Basic Syntax</h1>
+    <div id="test1">
+        <h2>Test Box 1</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam nobis consectetur, voluptate autem repellat ut maxime nihil quae dicta amet voluptates explicabo esse excepturi labore dolore distinctio quos quisquam dolores.</p>
+    </div>
+    <div id="test2">
+        <h2>Test Box 2</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam nobis consectetur, voluptate autem repellat ut maxime nihil quae dicta amet voluptates explicabo esse excepturi labore dolore distinctio quos quisquam dolores.</p>
+    </div>
+    <script src="/jquery.js"></script>
+    <script>
+       $(document).ready(function(){
+        const html= $('#test1').html();
+        console.log(html)
+        const html2= $('#test2').html();
+        console.log(html)
+       }) 
+    </script>
+</body>
+</html>

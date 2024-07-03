@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Effect Example</title>
+    <style>
+        h1 {
+            background-color: rgb(133, 39, 39);
+            text-align: center;
+            color: rgb(234, 230, 211);
+            border: 2px solid ;
+            border-radius: 5px;
+        }
+        h2 {
+            background-color: rgb(243, 241, 237);
+            text-align: center;
+            color: rgb(0, 0, 0);
+            border-radius: 1px;
+        }
+        .container {
+            width: 100%;
+            margin: 20px auto;
+            display: flex;
+            justify-content: space-around;
+        }
+        #box {
+            width: 100%;
+            padding: 10px;
+            border: 2px solid #a6bf1c;
+            margin: 20px; 
+        }
+        body {
+            background-color: #edf1ee;
+        }
+    </style>
+</head>
+<body>
+    <h1>Learn by : Anmol Chauhan</h1>
+    <div class="container">
+        <div id="box">
+            <h2>Test Box</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eget justo ac dui scelerisque fermentum...</p>
+            <!-- Add more content if needed -->
+        </div>
+    </div>
+    <button id="fadeOutBtn">Fade Out</button>
+    <button id="fadeInBtn">Fade In</button>
+    <button id="fadeToggleBtn">Fade Toggle</button>
+
+    <!-- Ensure jQuery is properly included -->
+    <script src="/jquery.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('#fadeOutBtn').click(function() {
+                $('#box').fadeOut("slow");
+            });
+            $('#fadeInBtn').click(function() {
+                $('#box').fadeIn("fast");
+            });
+            $('#fadeToggleBtn').click(function() {
+                $('#box').fadeToggle(2000);
+            });
+            // Add other jQuery code here if needed
+        });
+    </script>
+</body>
+</html>

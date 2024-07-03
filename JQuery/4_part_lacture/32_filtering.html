@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nested Divs Example</title>
+<style>
+    /* Basic styling for clarity */
+    .main-outer {
+        background-color: lightblue;
+        padding: 20px;
+    }
+    .outer {
+        background-color: lightgreen;
+        padding: 20px;
+    }
+    .inner {
+        background-color: lightcoral;
+        padding: 20px;
+    }
+    .A {
+        background-color: lightyellow;
+        padding: 20px;
+        margin-bottom: 10px;
+    }
+    .B {
+        background-color: lightyellow;
+        padding: 20px;
+        margin-bottom: 10px;
+    }
+    .C {
+        background-color: lightyellow;
+        padding: 20px;
+        margin-bottom: 10px;
+    }
+    .D{
+        background-color: lightyellow;
+        padding: 20px;
+        margin-bottom: 10px;
+    }
+
+    h1{
+        background-color: rgb(36, 146, 109);
+        text-align: center;
+        color: rgb(18, 31, 31);
+        border: 2px solid ;
+        border-radius: 5px;
+    }
+</style>
+</head>
+<body>
+    <h1>Learn by : Anmol Chauhan </h1>
+    <P> Filtering Method
+        <ol>
+        <li>fast()</li>
+        <li>last()</li>
+        <li>eq()</li>
+        <li>filter()</li>
+        <li>not()</li>
+        <li>slice()</li>
+        </ol>
+    </P>
+<div class="main-outer">
+    <h2>Main Outer</h2>
+    <div class="outer">
+        <h2>Outer</h2>
+        <div class="inner">
+            <h2>Inner Outer</h2>
+            <div class="A"> Anmol</div>
+            <div class="B"> Payal</div>
+            <div class="C"> Arsh</div>
+            <div class="D"> Nikhil</div>
+        </div>
+    </div>
+</div>
+<script src="/jquery.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<script>
+    $(document).ready(function(){
+   $('p').first().css('background','yellow')
+})
+</script>
+</body>
+</html>
